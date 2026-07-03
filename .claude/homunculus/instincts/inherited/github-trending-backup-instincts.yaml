@@ -1,0 +1,299 @@
+# Instincts generated from https://github.com/entrepeneur4lyf/github-trending-backup
+# Generated: 2026-07-03T23:32:51.458Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: github-trending-backup-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: build
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: build(deps): bump golang.org/x/net from 0.7.0 to 0.55.0
+
+---
+id: github-trending-backup-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Commit Length
+
+## Action
+
+Write moderate-length commit messages (~55 characters)
+
+## Evidence
+
+- Average commit message length: 55 chars
+- Based on 1 commits
+
+---
+id: github-trending-backup-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: github-trending-backup-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: github-trending-backup-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: github-trending-backup-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: github-trending-backup-instinct-file-naming
+trigger: "When creating a new Go source file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in files: namingConventions.files = camelCase
+
+---
+id: github-trending-backup-instinct-function-naming
+trigger: "When defining a new function in Go"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions = camelCase
+
+---
+id: github-trending-backup-instinct-class-naming
+trigger: "When defining a new class or struct in Go"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Instinct Class Naming
+
+## Action
+
+Name the class or struct using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes = PascalCase
+
+---
+id: github-trending-backup-instinct-constant-naming
+trigger: "When declaring a constant in Go"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants = SCREAMING_SNAKE_CASE
+
+---
+id: github-trending-backup-instinct-import-style
+trigger: "When importing modules in Go files"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle = relative
+
+---
+id: github-trending-backup-instinct-export-style
+trigger: "When exporting functions or variables in Go"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle = named
+
+---
+id: github-trending-backup-instinct-commit-format
+trigger: "When writing a Git commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Instinct Commit Format
+
+## Action
+
+Use the conventional commit format with a 'build' prefix for dependency updates
+
+## Evidence
+
+- Seen in commit: build(deps): bump golang.org/x/net from 0.7.0 to 0.55.0
+- Pattern in commits.prefixes = ["build"]
+
+---
+id: github-trending-backup-instinct-commit-length
+trigger: "When composing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Instinct Commit Length
+
+## Action
+
+Keep the commit message around 55 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength = 55
+
+---
+id: github-trending-backup-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: entrepeneur4lyf/github-trending-backup
+---
+
+# Github Trending Backup Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation = separate
+
