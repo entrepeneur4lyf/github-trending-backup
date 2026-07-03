@@ -1,0 +1,6 @@
+interface:
+  display_name: "Github Trending Backup"
+  short_description: "Repo-specific patterns and workflows for github-trending-backup"
+  default_prompt: "Use the github-trending-backup repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
